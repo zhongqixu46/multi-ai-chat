@@ -1,0 +1,15 @@
+# 打包配置（第 9 步会再完善图标和自动更新）
+appId: com.zhongqixu.multiaichat
+productName: Multi AI Chat
+directories:
+  output: dist
+files:
+  - out/**
+  - package.json
+asarUnpack:
+  - node_modules/better-sqlite3-multiple-ciphers/**
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
